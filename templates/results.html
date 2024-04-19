@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simulation Results</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Simulation Results</h1>
+    <p>Polymer Concentration: {{ request.form["polymer_concentration"] }}</p>
+    <p>Crosslink Density: {{ request.form["crosslink_density"] }}</p>
+    <p>Swelling Ratio: {{ swelling_ratio }}</p>
+    <img src="data:image/png;base64,{{ image_base64 }}" alt="Hydrogel Swelling Graph">
+    <br>
+    <a href="/">Run another simulation</a>
+</body>
+</html>
