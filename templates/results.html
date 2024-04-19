@@ -6,9 +6,10 @@
 </head>
 <body>
     <h1>Simulation Results</h1>
-    <p>Polymer Concentration: {{ request.form["polymer_concentration"] }}</p>
-    <p>Crosslink Density: {{ request.form["crosslink_density"] }}</p>
+    <p>Selected Material: {{ material }}</p>
     <p>Swelling Ratio: {{ swelling_ratio }}</p>
+    <p>Pore Size: {{ pore_size }} nm</p>
+    <p>Diffusion Coefficient: {{ diffusion_coefficient }} cm²/s</p>
     <img src="data:image/png;base64,{{ image_base64 }}" alt="Hydrogel Swelling Graph">
     <br>
     <a href="/">Run another simulation</a>
